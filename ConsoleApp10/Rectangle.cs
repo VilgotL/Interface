@@ -21,5 +21,11 @@ namespace ConsoleApp10
             double o = width + width + height + height;
             Console.WriteLine("Omkrets: " + o);
         }
+
+        public Rectangle(double width, double height)
+        {
+            this.width = width;
+            this.height = height;
+        } 
     }
 }

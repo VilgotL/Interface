@@ -23,5 +23,11 @@ namespace ConsoleApp10
             double o = width + height + hypotenusa;
             Console.WriteLine("Omkrets: " + o);
         }
+
+        public Triangle(double width, double height)
+        {
+            this.width = width;
+            this.height = height;
+        }
     }
 }

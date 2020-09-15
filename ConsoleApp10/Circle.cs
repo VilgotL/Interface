@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp10
 {
-    class Circle
+    class Circle : IShape
     {
         protected double radie;
 
@@ -19,6 +19,11 @@ namespace ConsoleApp10
         {
             double o = (radie + radie) * Math.PI;
             Console.WriteLine("Omkrets: " + o);
+        }
+
+        public Circle(double radie)
+        {
+            this.radie = radie;
         }
     }
 }
